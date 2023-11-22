@@ -1,6 +1,6 @@
 {
   "name": "first-ai",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "first chatgpt project",
   "main": "index.js",
   "type": "module",
@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "openai": "^4.19.1"
-  }
+  },
+  "devDependencies": {}
 }

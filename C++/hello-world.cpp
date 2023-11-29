@@ -1,7 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int32_t main() {
-    cout <<"hello world\nfrom bhai labboo";
+int main() {
+    cout <<"hello world\nfrom bhai labboo\n";
     return 0;
 }

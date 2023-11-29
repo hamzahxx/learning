@@ -1,24 +1,24 @@
 const contacts = [
   {
-    name: "Beyonce",
+    name: "Bruce Wayne",
     imgURL:
-      "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
+      "https://www.cheatsheet.com/wp-content/uploads/2021/08/Christian-Bale-close-up-bats.jpg?strip=all&quality=89",
     phone: "+123 456 789",
-    email: "b@beyonce.com",
+    email: "bruce@wayne-enterprise.com",
   },
   {
-    name: "Jack Bauer",
+    name: "Heath Ledger",
     imgURL:
-      "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7l_F-tq0Zt-GIvFegSPYTLrUarwD5WQ2ZA&usqp=CAU",
     phone: "+987 654 321",
-    email: "jack@nowhere.com",
+    email: "whysoserious@nowhere.com",
   },
   {
-    name: "Chuck Norris",
+    name: "Tom Hardy",
     imgURL:
-      "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
+      "https://hollywoodlife.com/wp-content/uploads/2013/05/tom-hardy-bio-photo1.jpg?quality=100",
     phone: "+918 372 574",
-    email: "gmail@chucknorris.com",
+    email: "borninthedark@alwayshard.com",
   },
 ];
 

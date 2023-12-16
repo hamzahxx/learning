@@ -22,12 +22,14 @@ function App() {
   return (
     <>
       <table>
-        <tr>
-          <th>Model</th>
-          <th>Top Speed</th>
-          <th>Top Color</th>
-        </tr>
-        {cars.map(carData)}
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Top Speed</th>
+            <th>Top Color</th>
+          </tr>
+        </thead>
+        <tbody>{cars.map(carData)}</tbody>
       </table>
     </>
   );

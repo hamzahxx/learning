@@ -11,14 +11,14 @@ const contacts = [
     imgURL:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7l_F-tq0Zt-GIvFegSPYTLrUarwD5WQ2ZA&usqp=CAU",
     phone: "+987 654 321",
-    email: "whysoserious@nowhere.com",
+    email: "whysoserious@gotham.com",
   },
   {
     name: "Tom Hardy",
     imgURL:
       "https://hollywoodlife.com/wp-content/uploads/2013/05/tom-hardy-bio-photo1.jpg?quality=100",
     phone: "+918 372 574",
-    email: "borninthedark@alwayshard.com",
+    email: "borninthedark@always-hard.com",
   },
 ];
 

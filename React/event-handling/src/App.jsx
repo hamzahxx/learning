@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 
 function App() {
+  const [userName, setUserName] = useState("");
   const [headingText, setHeadingText] = useState("Hellooo");
   const [isMouseOver, setMouseOver] = useState(false);
 
-  function handleHover() {
-    setMouseOver(true);
-  }
+  const handleHover = () => setMouseOver(true);
 
-  function handleOut() {
-    setMouseOver(false);
-  }
+  const handleOut = () => setMouseOver(false);
+
+  const handleInputChange = event => setUserName(event.target.value);
 
   function handleClick() {
-    const userName = document.getElementById("inputName").value
     setHeadingText("Hellooo " + userName);
     console.log("Clicked");
   }
@@ -21,7 +19,7 @@ function App() {
   return (
     <div className="container">
       <h1>{headingText}</h1>
-      <input id="inputName" type="text" placeholder="What's your name?" />
+      <input onChange={handleInputChange} value={userName} type="text" placeholder="What's your name?" />
       <button
         style={{ backgroundColor: isMouseOver ? "black" : "white" }}
         onMouseOver={handleHover}

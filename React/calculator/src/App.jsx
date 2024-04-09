@@ -1,58 +1,56 @@
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 
-function App() {
+const App = () => {
   const inputRef = useRef(null);
-  const resultRef = useRef(null);
   const [result, setResult] = useState(0);
 
-  function plus(e) {
+  const operate = (operation, e) => {
     e.preventDefault();
-    setResult((result) => result + Number(inputRef.current.value));
-  }
+    const num = Number(inputRef.current.value);
+    setResult((result) => {
+      switch (operation) {
+        case "plus":
+          return result + num;
+        case "minus":
+          return result - num;
+        case "times":
+          return result * num;
+        case "divide":
+          return result / num;
+        default:
+          return result;
+      }
+    });
+  };
 
-  function minus(e) {
-    // Add the code for the minus function
-  }
-
-  function times(e) {
-    // Add the code for the plus function
-  }
-
-  function divide(e) {
-    // Add the code for the divide function
-  }
-
-  function resetInput(e) {
-    // Add the code for the resetInput function
-  }
-
-  function resetResult(e) {
-    // Add the code for the resetResult function
-  }
+  const reset = () => {
+    inputRef.current.value = 0;
+    setResult(0);
+  };
 
   return (
-    <div className="App">
-      <div>
-        <h1>Simplest Working Calculator</h1>
-      </div>
+    <>
+      <h2>Building a Calculator using React</h2>
       <form>
-        <p ref={resultRef}>{/* add the value of the current total */}</p>
+        <p>{result}</p>
         <input
-          pattern="[0-9]"
-          ref={inputRef}
           type="number"
+          ref={inputRef}
+          name="number"
+          id="number"
+          pattern="[0-9]"
           placeholder="Type a number"
         />
-        <button onClick={plus}>add</button>
-        {/* Add the subtract button */}
-        {/* Add the multiply button */}
-        {/* Add the divide button */}
-        {/* Add the resetInput button */}
-        {/* Add the resetResult button */}
+        <br />
+        <button onClick={(e) => operate("plus", e)}>Add</button>
+        <button onClick={(e) => operate("minus", e)}>Subtract</button>
+        <button onClick={(e) => operate("times", e)}>Multiply</button>
+        <button onClick={(e) => operate("divide", e)}>Divide</button>
+        <button onClick={reset}>Reset</button>
       </form>
-    </div>
+    </>
   );
-}
+};
 
 export default App;

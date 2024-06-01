@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+}
+#box1 {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+}
+
+#box2 {
+  height: 300px;
+  width: 300px;
+  background-color: aquamarine;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
